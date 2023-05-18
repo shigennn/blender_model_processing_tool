@@ -1,0 +1,13 @@
+{
+    "asset_dir": "../resources/assets/scenes",
+    "scenes": [
+        {
+            "title": "scene1",
+            "blend_file": "scene1.blend",
+            "animation_clip": "scene1.json",
+            "start_frame": 0,
+            "end_frame": 120,
+            "fps": 30
+        }
+    ]
+}

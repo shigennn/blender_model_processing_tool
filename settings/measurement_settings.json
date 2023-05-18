@@ -1,0 +1,28 @@
+{
+    "common": {
+        "working_dir": "C:/Users/naoto/Downloads/manekin-noarm",
+        "obj_file_name": "measurement.obj",
+        "scale": 0.001,
+        "export_file_name": "measurement_for_viewer"
+    }, 
+    "measurement": {
+        "file_name": "measurement.json",
+        "visualize": {
+            "Neck": [1.0, 0.0, 0.0, 1.0],
+            "Bust": [1.0, 0.0, 0.0, 1.0],
+            "UnderBust": [1.0, 0.0, 0.0, 1.0],
+            "Abdomen": [1.0, 0.0, 0.0, 1.0],
+            "Waist": [1.0, 0.0, 0.0, 1.0],
+            "Hip": [1.0, 0.0, 0.0, 1.0],
+            "ArmL": [0.0, 1.0, 0.0, 1.0],
+            "ArmR": [0.0, 1.0, 0.0, 1.0],
+            "ShoulderWidth": [0.0, 0.0, 1.0, 1.0],
+            "ArmlenL": [0.0, 1.0, 0.0, 1.0],
+            "ArmlenR": [0.0, 1.0, 0.0, 1.0],
+            "CalfL": [1.0, 1.0, 0.0, 1.0],
+            "CalfR": [1.0, 1.0, 0.0, 1.0],
+            "ThighL": [1.0, 1.0, 0.0, 1.0],
+            "ThighR": [1.0, 1.0, 0.0, 1.0]
+        }
+    }
+}

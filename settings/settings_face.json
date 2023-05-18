@@ -1,0 +1,168 @@
+{
+    "common": {
+        "working_dir": "C:/VRC Dropbox/SHIGENOBU Naoto/temporary",
+        "file_name": "lores_uv_eyelashes.fbx-bin.fbx",
+        "export_file_name": "vrcscanned",
+        "thumbnail_file_name": "thumbnail",
+        "thumbnail_animation_file": "rest_pose.json"
+    }, 
+    "materials": [
+        { 
+            "name": "M_head",
+            "setting": {
+                "shader": "STANDARD",
+                "basecolor_tex": "lores_uv_vrcface.jpg",
+                "normal_tex": false,
+                "roughness_tex": false,
+                "emission_tex": false,
+                "metallic_param": 0.0,
+                "roughness_param": 1.0,
+                "emission_color": [0, 0, 0, 1],
+                "blend_method": "OPAQUE"
+            }
+        },
+        { 
+            "name": "material_0",
+            "setting": {
+                "shader": "STANDARD",
+                "basecolor_tex": "lores_uv_vrcface.jpg",
+                "normal_tex": false,
+                "roughness_tex": false,
+                "emission_tex": false,
+                "metallic_param": 0.0,
+                "roughness_param": 1.0,
+                "emission_color": [0, 0, 0, 1],
+                "blend_method": "OPAQUE"
+            }
+        },
+        { 
+            "name": "m_brows",
+            "setting": {
+                "shader": "STANDARD",
+                "basecolor_tex": "eyelashes.png",
+                "normal_tex": false,
+                "roughness_tex": false,
+                "emission_tex": false,
+                "metallic_param": 0.0,
+                "roughness_param": 1.0,
+                "emission_color": [0, 0, 0, 1],
+                "blend_method": "CLIP"
+            }
+        },
+        { 
+            "name": "M_eye",
+            "setting": {
+                "shader": "STANDARD",
+                "basecolor_tex": "eye.jpg",
+                "normal_tex": false,
+                "roughness_tex": false,
+                "emission_tex": false,
+                "metallic_param": 0.8,
+                "roughness_param": 0.2,
+                "emission_color": [0, 0, 0, 1],
+                "blend_method": "OPAQUE"
+            }
+        },
+        { 
+            "name": "M_inner_eye",
+            "setting": {
+                "shader": "STANDARD",
+                "basecolor_tex": "eye.jpg",
+                "normal_tex": false,
+                "roughness_tex": false,
+                "emission_tex": false,
+                "metallic_param": 0.8,
+                "roughness_param": 0.2,
+                "emission_color": [0, 0, 0, 1],
+                "blend_method": "OPAQUE"
+            }
+        },
+        { 
+            "name": "M_lacrimal",
+            "setting": {
+                "shader": "STANDARD",
+                "basecolor_tex": "lacrimal-caruncle.png",
+                "normal_tex": false,
+                "roughness_tex": false,
+                "emission_tex": false,
+                "metallic_param": 0.2,
+                "roughness_param": 0.2,
+                "emission_color": [0, 0, 0, 1],
+                "blend_method": "BLEND"
+            }
+        },
+        { 
+            "name": "m_tearline",
+            "setting": {
+                "shader": "STANDARD",
+                "basecolor_tex": "lacrimal-caruncle.png",
+                "normal_tex": false,
+                "roughness_tex": false,
+                "emission_tex": false,
+                "metallic_param": 0.2,
+                "roughness_param": 0.2,
+                "emission_color": [0, 0, 0, 1],
+                "blend_method": "BLEND"
+            }
+        },
+        { 
+            "name": "M_teeth",
+            "setting": {
+                "shader": "STANDARD",
+                "basecolor_tex": "teeth.jpg",
+                "normal_tex": false,
+                "roughness_tex": false,
+                "emission_tex": false,
+                "metallic_param": 0.0,
+                "roughness_param": 1.0,
+                "emission_color": [0, 0, 0, 1],
+                "blend_method": "OPAQUE"
+            }
+        },
+        { 
+            "name": "M_tongue",
+            "setting": {
+                "shader": "STANDARD",
+                "basecolor_tex": "tongue01_diffuse.jpg",
+                "normal_tex": false,
+                "roughness_tex": false,
+                "emission_tex": false,
+                "metallic_param": 0.0,
+                "roughness_param": 1.0,
+                "emission_color": [0, 0, 0, 1],
+                "blend_method": "OPAQUE",
+                "multiply_color": [0.18, 0.01, 0.01, 1.0]
+            }
+        }
+    ],
+    "vrm": {
+        "title": "vrcscanned",
+        "version": "1.0",
+        "author": "vrcscanned",
+        "first_person_bone": "head",
+        "first_person_offset": [0.0, 0.12, 0.12],
+        "look_at_type": "BlendShape"
+    },
+    "vrm_blendshapes": {
+        "mesh": "mesh",
+        "settings": {
+            "a": "a",
+            "i": "i",
+            "u": "u",
+            "e": "e",
+            "o": "o",
+            "blink": "Blink",
+            "blink_l": "Blink_left",
+            "blink_r": "Blink_right",
+            "lookup": "Look_up",
+            "lookdown": "Look_down",
+            "lookleft": "Look_left",
+            "lookright": "Look_right",
+            "neutral": "Basis",
+            "joy": "Smile",
+            "angry": "anger",
+            "sorrow": "sad",
+            "fun": "happy"
+        }
+    }
+}

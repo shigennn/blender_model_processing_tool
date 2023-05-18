@@ -1,0 +1,34 @@
+{
+    "common": {
+        "working_dir": "E:/VRC Dropbox/Projects/VRCBaseSystem/SampleAvatar/testdata/hands",
+        "file_name": "T_Pose.fbx-bin.fbx",
+        "export_file_name": "vrcscanned",
+        "thumbnail_file_name": "thumbnail",
+        "thumbnail_animation_file": "relax.json"
+    }, 
+    "materials": [
+        { 
+            "name": "M_head",
+            "setting": {
+                "shader": "UNLIT",
+                "basecolor_tex": "lores_uv_out.jpg",
+                "normal_tex": "",
+                "roughness_tex": "",
+                "emission_tex": "",
+                "metallic_param": 0.0,
+                "roughness_param": 1.0,
+                "emission_color": [0, 0, 0, 1],
+                "blend_method": "OPAQUE"
+            }
+        }
+    ],
+    "vrm": {
+        "title": "vrcscanned",
+        "version": "1.0",
+        "author": "VRC Inc.",
+        "first_person_bone": "head",
+        "first_person_offset": [0.0, 0.12, 0.12],
+        "look_at_type": "BlendShape"
+    },
+    "vrm_blendshapes": {}
+}
