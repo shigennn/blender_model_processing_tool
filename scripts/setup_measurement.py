@@ -27,6 +27,7 @@ def main() -> None:
     working_dir = os.path.abspath(common["working_dir"])
     obj_file_name = common["obj_file_name"]
     export_file_name = common["export_file_name"]
+    viewer_file_name = common["viewer_file_name"]
     scale = common["scale"]
 
     # import and setting body obj
@@ -41,11 +42,14 @@ def main() -> None:
         material.multiply_color = (0.74, 0.74, 0.74, 1.0)
         material.create()
         material = None
+
+    # export glb
+    export_model(working_dir, export_file_name, 'GLB')
+    
     # smoothing
     add_smooth_mod(body_obj, 0.5, 10)
 
-
-    # measurement obj
+    # landmark object
     measurement = settings["measurement"]
     measurement_file_name = measurement["file_name"]
     visualize = measurement["visualize"]
@@ -78,7 +82,7 @@ def main() -> None:
             material = None
 
     # export fbx
-    export_model(working_dir, export_file_name, 'FBX')
+    export_model(working_dir, viewer_file_name, 'FBX')
 
     logger.info("Process end.")
 

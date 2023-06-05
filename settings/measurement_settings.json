@@ -1,10 +1,11 @@
 {
     "common": {
-        "working_dir": "C:/Users/naoto/Downloads/manekin-noarm",
+        "working_dir": "E:/VRC Dropbox/Projects/VRCBaseSystem/SampleAvatar/testdata_woman/measurement",
         "obj_file_name": "measurement.obj",
         "scale": 0.001,
-        "export_file_name": "measurement_for_viewer"
-    }, 
+        "export_file_name": "measurement",
+        "viewer_file_name": "measurement_for_viewer"
+    },
     "measurement": {
         "file_name": "measurement.json",
         "visualize": {
