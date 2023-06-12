@@ -1,13 +1,13 @@
 {
     "common": {
-        "working_dir": "E:/VRC Dropbox/Projects/GC企画_nucadoco/202307_UAP移行/04.Develop/SampleData_VRCFace/現行Face",
+        "working_dir": "ENETER_YOUR_DIRECTORY",
         "file_name": "T_Pose.fbx-bin.fbx",
         "export_file_name": "avatar",
         "thumbnail_file_name": "thumbnail",
         "thumbnail_animation_file": "relax.json"
-    }, 
+    },
     "materials": [
-        { 
+        {
             "name": "M_head",
             "setting": {
                 "shader": "UNLIT",
