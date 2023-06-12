@@ -27,6 +27,7 @@ def main() -> None:
     working_dir = os.path.abspath(common["working_dir"])
     obj_file_name = common["obj_file_name"]
     export_file_name = common["export_file_name"]
+    viewer_file_name = common["viewer_file_name"]
     scale = common["scale"]
 
     # import and setting body obj
@@ -41,44 +42,55 @@ def main() -> None:
         material.multiply_color = (0.74, 0.74, 0.74, 1.0)
         material.create()
         material = None
-    # smoothing
-    add_smooth_mod(body_obj, 0.5, 10)
 
+    # export model
+    export_exts = get_cmdarg('export_exts')
+    for ext in export_exts:
+        export_model(working_dir, export_file_name, ext)
+        logger.info(f'{ext.upper()} created.')
 
-    # measurement obj
-    measurement = settings["measurement"]
-    measurement_file_name = measurement["file_name"]
-    visualize = measurement["visualize"]
-    
-    # read measurement json
-    measurement_dir = os.path.join(working_dir, measurement_file_name)
-    if os.path.exists(measurement_dir):
-        with open(measurement_dir, 'r') as file:
-            data = json.load(file)
-        landmarks = data["Landmark"]
+    # viewer fbx
+    create_viewerfbx = get_cmdarg('create_viewerfbx')
+    if create_viewerfbx:
 
-        # create measurement object
-        measurement_objs = create_measurement_objs_from_landmarks(
-            landmarks = landmarks,
-            visualize_points = list(visualize.keys()),
-            scale = scale,
-            threshold_distance = 0.1,
-            bevel_depth = 0.002,
-        )
+        # smoothing
+        add_smooth_mod(body_obj, 0.5, 10)
 
-        # set measurement object color
-        for index, obj in enumerate(measurement_objs):
-            mat = create_and_add_material(obj, obj.name)
-            material = Material(mat)
-            material.set_shader('STANDARD')
-            material.multiply_color = tuple(visualize[obj.name])
-            material.emission_color = tuple(visualize[obj.name])
+        # landmark object
+        measurement = settings["measurement"]
+        measurement_file_name = measurement["file_name"]
+        visualize = measurement["visualize"]
+        
+        # read measurement json
+        measurement_dir = os.path.join(working_dir, measurement_file_name)
+        if os.path.exists(measurement_dir):
+            with open(measurement_dir, 'r') as file:
+                data = json.load(file)
+            landmarks = data["Landmark"]
 
-            material.create()
-            material = None
+            # create measurement object
+            measurement_objs = create_measurement_objs_from_landmarks(
+                landmarks = landmarks,
+                visualize_points = list(visualize.keys()),
+                scale = scale,
+                threshold_distance = 0.1,
+                bevel_depth = 0.002,
+            )
 
-    # export fbx
-    export_model(working_dir, export_file_name, 'FBX')
+            # set measurement object color
+            for index, obj in enumerate(measurement_objs):
+                mat = create_and_add_material(obj, obj.name)
+                material = Material(mat)
+                material.set_shader('STANDARD')
+                material.multiply_color = tuple(visualize[obj.name])
+                material.emission_color = tuple(visualize[obj.name])
+
+                material.create()
+                material = None
+
+        # export fbx
+        export_model(working_dir, viewer_file_name, 'FBX')
+        logger.info("Viewer fbx created.")
 
     logger.info("Process end.")
 

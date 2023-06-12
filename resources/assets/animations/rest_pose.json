@@ -1,0 +1,237 @@
+{
+    "name": "rest pose", 
+    "isLoopAnimation": false, 
+    "fps": 30, 
+    "boneAnimations": [
+        {
+            "name": "hips", 
+            "keys": [
+                [0,1,0,0,0],
+                [1,1,0,0,0]
+            ]
+        }, 
+        {
+            "name": "spine", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "chest", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "upperChest", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "neck", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "head", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftUpperLeg", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftLowerLeg", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftFoot", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftToes", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightUpperLeg", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightLowerLeg", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightFoot", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightToes", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftShoulder", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftUpperArm", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftLowerArm", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftHand", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightShoulder", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightUpperArm", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightLowerArm", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightHand", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightThumbProximal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightThumbIntermediate", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightThumbDistal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightIndexProximal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightIndexIntermediate", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightIndexDistal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightMiddleProximal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightMiddleIntermediate", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightMiddleDistal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightRingProximal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightRingIntermediate", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightRingDistal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightLittleProximal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightLittleIntermediate", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "rightLittleDistal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftThumbProximal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftThumbIntermediate", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftThumbDistal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftIndexProximal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftIndexIntermediate", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftIndexDistal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftMiddleProximal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftMiddleIntermediate", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftMiddleDistal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftRingProximal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftRingIntermediate", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftRingDistal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftLittleProximal", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftLittleIntermediate", 
+            "keys": [[0,1,0,0,0]]
+        }, 
+        {
+            "name": "leftLittleDistal", 
+            "keys": [[0,1,0,0,0]]
+        }
+    ], 
+    "hipsPosAnimation": 
+    {
+        "name": "hips", 
+        "keys": [[0,0,0,0]]
+    }, 
+    "rootPosition": 
+    {
+        "name": "rootPosition", 
+        "keys": [
+            [0,0,0,0]
+        ]
+    }, 
+    "rootRotation": 
+    {
+        "name": "rootRotation", 
+        "keys": [
+            [0,1,0,0,0]
+        ]
+    }
+}
